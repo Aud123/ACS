@@ -1,0 +1,18 @@
+# 	CURL COMMAND LINE
+#
+#	Sample with domain name
+#
+#
+
+
+# Access without domain name
+curl -vv http://164.132.106.182
+
+
+# Access with domain name
+curl -vv http://blog.codeur.online
+
+
+# Changing the domain name
+curl -vv http://blog.codeur.online --header 'Host: julieng.student.codeur.online'
+
