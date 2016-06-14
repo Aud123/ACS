@@ -1,0 +1,41 @@
+# CURL SAMPLE
+# Sample with User-agent
+
+curl 'https://fonts.googleapis.com/css?family=Open+Sans'
+
+
+# returned CSS: 
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), 
+  url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf) 
+  format('truetype');
+}
+
+# Setting User-agent to Microsoft Internet Explorer
+curl --user-agent 'Mozilla/5.0 (Windows; U; MSIE 9.0; WIndows NT 9.0; en-US))' 'https://fonts.googleapis.com/css?family=Open+Sans'
+
+# returned CSS: 
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), 
+  url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) 
+  format('woff2');
+}
+
+# Setting User-agent to Firefox
+curl --user-agent 'Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.0' 'https://fonts.googleapis.com/css?family=Open+Sans'
+
+# returned CSS: 
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), 
+  url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) 
+  format('woff');
+}
