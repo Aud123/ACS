@@ -23,8 +23,8 @@ curl --user-agent 'Mozilla/5.0 (Windows; U; MSIE 9.0; WIndows NT 9.0; en-US))' '
   font-style: normal;
   font-weight: 400;
   src: local('Open Sans'), local('OpenSans'), 
-  url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) 
-  format('woff2');
+  url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) 
+  format('woff');
 }
 
 # Setting User-agent to Firefox
@@ -36,6 +36,6 @@ curl --user-agent 'Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/
   font-style: normal;
   font-weight: 400;
   src: local('Open Sans'), local('OpenSans'), 
-  url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) 
-  format('woff');
+  url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) 
+  format('woff2');
 }
