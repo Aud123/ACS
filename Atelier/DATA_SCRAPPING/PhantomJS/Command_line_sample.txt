@@ -1,0 +1,22 @@
+# Explication d'utilisation de PhantomJS
+#
+# Télécharger PhantomJS depuis le site officiel:
+# http://phantomjs.org/download.html
+#
+# Sous windows ajouter .exe aux lignes de commande
+#
+# sous linux:
+# phantomjs script.js 
+#
+# Sous Windows:
+# phantomjs.exe script.js
+#
+# Exemple d'utilisation de convert_page.js
+#
+
+# Creer un PNG de la page de google
+phantomjs convert_page.js http://www.google.com/  google.png
+
+# Creer un PDF de la page de google
+phantomjs convert_page.js http://www.google.com/  google.pdf
+

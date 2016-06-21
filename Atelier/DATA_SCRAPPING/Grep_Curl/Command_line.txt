@@ -1,0 +1,16 @@
+# Exemple d'utilisation de CURL et GREP
+
+
+# Afficher les métas
+curl http://www.ikea.com/fr/fr/catalog/products/S29097737/ | grep meta
+
+
+# Les expressions régulières
+curl http://www.ikea.com/fr/fr/catalog/products/S29097737/ | grep -o 'http://[a-zA-Z0-9.-]*/'
+
+
+# Mettre le résultat dans un fichier
+curl http://www.ikea.com/fr/fr/catalog/products/S29097737/ | grep meta >monfichier.txt
+
+
+
